@@ -1,0 +1,25 @@
+.bg-container {
+    background-size: auto;
+    text-align: center;
+}
+.headingy {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 115, 253, 1) 100%);
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.button1y {
+    background-color: #dae2ec;
+    font-family: "Roboto";
+    font-size: 18px;
+    width: 33%;
+    border-width: 0;
+    border-radius: 8px;
+}
+.tab-contenty {
+    text-align: center;
+}
+.tabs-containery {
+    background-color: white;
+    border-radius: 8px;
+}

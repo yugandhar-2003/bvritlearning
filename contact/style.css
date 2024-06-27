@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+     
+}
+.bg-container {
+    background-size: auto;
+    text-align: center;
+}
+.headingy {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 115, 253, 1) 100%);
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.button1y {
+    background-color: #dae2ec;
+    font-family: "Roboto";
+    font-size: 18px;
+    width: 33%;
+    border-width: 0;
+    border-radius: 8px;
+    padding:15px;
+    margin:15px;
+}
+.tab-contenty {
+    text-align: center;
+}
+.tabs-containery {
+    background-color: white;
+    border-radius: 8px;
+}
+.sir120{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+     
+}
+img{
+    border-radius: 50%;
+    height:35vh;
+    width:15vh;
+}
+
+p{
+    font-size:20px;
+    font-family: "Bree Serif";
+    color: black;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.social-media a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+    font-size: 2em;
+}
+ 
+.social-media a.instagram:hover {
+    color: #e4405f; /* Instagram */
+    transform: rotate(360deg);
+}
+.social-media a.linkedin:hover {
+    color: #0077b5; /* LinkedIn */
+    transform: rotate(360deg);
+}
+.social-media a.github:hover {
+    color: #333; /* GitHub */
+    transform: rotate(360deg);
+}
+.social-media a.email:hover {
+    color: #D44638; /* Email */
+}
