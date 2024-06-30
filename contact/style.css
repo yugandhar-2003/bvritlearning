@@ -41,9 +41,9 @@ body, html {
      
 }
 img{
-    border-radius: 50%;
-    height:35vh;
-    width:15vh;
+    border-radius:50%;
+    width:20vh;
+    height:30vh;
 }
 
 p{
