@@ -1,6 +1,7 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -15,26 +16,23 @@ body .container {
 
 #filter-buttons button {
   border-radius: 3px;
-  background: #fff;
+  background:lightblue;
   border-color: transparent;
 }
 
 #filter-buttons button:hover {
-  background: #ddd;
+  background: linear-gradient(120deg,#28e761, #c7f442, #E6E6FA);
 }
 
 #filter-buttons button.active {
-  color: #fff;
-  background: #6c757d;
+  color: black;
+  background: linear-gradient(120deg, #28e761, #c7f442, #E6E6FA);
 }
 
 #filterable-cards .card {
   width: 15rem;
   border: 2px solid transparent;
-}
-
-#filterable-cards .card.hide {
-  display: none;
+  background: linear-gradient(120deg, #61b9ef, #4ee6e6, #E6E6FA);
 }
 
 @media (max-width: 600px) {
@@ -49,4 +47,9 @@ body .container {
 
 .card-title{
   color:black;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
 }
