@@ -13,7 +13,8 @@ body,html {
     background: linear-gradient(125deg, rgb(247, 247, 246) 0%,  grey 50%,#0c0312 100%);
     border-radius: 20px;
     margin-top:20px;
-     height:fit-content;
+     height:100%;
+    width:100%;
 }
 .headingy {
     background: rgb(238, 174, 202);
