@@ -43,7 +43,8 @@
         border-radius: 15px;
     }
     .tutorial-card {
-        height: 100%; /* Ensures all cards have the same height */
+        height: 100%;
+        text-align:center;/* Ensures all cards have the same height */
     }
     .tutorial-card .bg-white {
         height: 100%; /* Ensures the inner content area matches the card height */
