@@ -3,6 +3,10 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+   
+    display: flex;
+        justify-content: center;  
+        align-items: center; 
 }
 
 li {
@@ -51,10 +55,20 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: center;
-    margin-left:middle;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    text-align: center;
 }
 
+ 
+
+
+@media (max-width: 768px) {
+  .hel {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
 .item {
     flex: 1 1 100%;
     padding: 20px;
@@ -340,4 +354,5 @@ nav .logo.space{
   margin: 8px;
   margin-top:30px;
   font-size:20px;
+  width:70%;
 }
