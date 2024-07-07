@@ -2,129 +2,129 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+Pp7DTRai8o5L0iw/P7bQOnKNFTScMAlD/FlpT9ZfWEH6EmFxw9y4U5cn" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">
+    <script>
+        // Your JavaScript function for searching tutorials
+        function searchTutorials() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const tutorialCards = document.getElementsByClassName('tutorial-card');
+
+            for (let i = 0; i < tutorialCards.length; i++) {
+                const title = tutorialCards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    tutorialCards[i].style.display = 'block';
+                } else {
+                    tutorialCards[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
       </head>
       <body>
-        <div class="nml">
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex  flex-lg-column">
-                <div class="containery d-flex flex-row justify-content-center">
+        <div class="container my-4">
+            <input type="text" id="searchInput" onkeyup="searchTutorials()" class="form-control" placeholder="Search for tutorials..">
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Tutorial Cards -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="python.png" alt="Course Image">
+                        <img class="h-40 object-cover imagey" src="python.png" alt="Python Course Image">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Python for Beginners</h3>
-                           <a href="..\videos\python.html">  <button class="buttony"  >EXPLORE</button></a>
+                            <a href="..\videos\python.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery  d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" style="" src="c.png" />
+                        <img class="w-full h-40 object-cover imagey" src="c.png" alt="C Course Image">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">C for Beginners</h3>
-                           <a href="..\videos\c.html">  <button class="buttony"  >EXPLORE</button></a>
+                            <a href="..\videos\c.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery  d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="java.jpg" />
+                        <img class="w-full h-40 object-cover imagey" src="java.jpg" alt="Java Course Image">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">java for Beginners</h3>
-                            <a href="..\videos\java.html"> <button class="buttony" >EXPLORE</button></a>
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Java for Beginners</h3>
+                            <a href="..\videos\java.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div> 
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery  d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="c++.jpg" />
+                        <img class="w-full h-40 object-cover imagey" src="c++.jpg" alt="C++ Course Image">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">C++ for Beginners</h3>
-                           <a href="..\videos\c++.html">  <button class="buttony"  >EXPLORE</button></a>
+                            <a href="..\videos\c++.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="ds.jpg" />
+                        <img class="w-full h-40 object-cover imagey" src="ds.jpg" alt="HTML Course Image">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">DS for Beginners</h3>
-                            <a href="..\videos\ds.html"> <button class="buttony"  >EXPLORE</button></a>
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">HTML for Beginners</h3>
+                            <a href="..\videos\ds.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="html.jpg" , />
+                        <img class="w-full h-40 object-cover imagey" src="html.jpg" alt="HTML Course Image">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">Html for Beginners</h3>
-                           <a href="..\videos\html.html">  <button class="buttony"  >EXPLORE</button></a>
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">HTML for Beginners</h3>
+                            <a href="..\videos\html.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-         
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery  d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="css.jpg" />
+                        <img class="w-full h-40 object-cover imagey" src="css.jpg" alt="CSS Course Image">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">CSS for Beginners</h3>
-                            <a href="..\videos\css.html"> <button class="buttony" >EXPLORE</button></a>
+                            <a href="..\videos\css.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="js.jpg" , />
+                        <img class="w-full h-40 object-cover imagey" src="js.jpg" alt="JavaScript Course Image">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">Javascript for Beginners</h3>
-                           <a href="..\videos\jas.html"> <button class="buttony"  >EXPLORE</button></a> 
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">JavaScript for Beginners</h3>
+                            <a href="..\videos\js.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="react.png" , />
+                        <img class="w-full h-40 object-cover imagey" src="react.png" alt="ReactJs Course Image">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">ReactJs for Beginners</h3>
-                            <a href="..\videos\react.html"> <button class="buttony"  >EXPLORE</button></a>
+                            <a href="..\videos\react.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
-            </div> 
-              
-            <div class="yogi col-12 col-md-6 col-lg-4 d-flex flex-lg-column">
-                <div class="containery d-flex flex-row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 tutorial-card">
                     <div class="bg-white shadow rounded-lg overflow-hidden">
-                        <img class="w-full h-40 object-cover imagey" src="sql.jpg" />
+                        <img class="w-full h-40 object-cover imagey" src="sql.jpg" alt="SQL Course Image">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">SQL for Beginners</h3>
-                           <a href="..\videos\sql.html">  <button class="buttony" >EXPLORE</button></a>
+                            <a href="..\videos\sql.html"><button class="buttony">EXPLORE</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </div> 
-   
+        </div>
       </body></html>
