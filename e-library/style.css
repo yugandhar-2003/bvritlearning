@@ -18,18 +18,20 @@ body .container {
 }
 
 #filter-buttons button {
-  border-radius: 3px;
-  background:lightblue;
+  border-radius: 6px;
+  background:white;
+  color:black;
   border-color: transparent;
 }
 
 #filter-buttons button:hover {
-  background: linear-gradient(120deg,#28e761, #c7f442, #E6E6FA);
+  background:white;
+  color:black;
 }
 
 #filter-buttons button.active {
-  color: black;
-  background: linear-gradient(120deg, #28e761, #c7f442, #E6E6FA);
+  color: #fff;
+  background:grey;
 }
 
 #filterable-cards .card {
