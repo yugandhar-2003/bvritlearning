@@ -1,63 +1,62 @@
-body,html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-     background-color:rgb(140, 205, 245);
-}
+ .bg-container {
+            background: #f1f5f8;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
 
-.bg-container {
-    background-size: cover;
-    text-align: center;
-    background: linear-gradient(125deg, rgb(247, 247, 246) 0%,  grey 50%,#0c0312 100%);
-    border-radius: 20px;
-    height:fit-content;
-    margin:20vh;
-    display: flex;
-    justify-content: center;
-    width:70%;
-}
-.headingy {
-    background: rgb(238, 174, 202);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 115, 253, 1) 100%);
-    font-family: "Roboto";
-    font-weight: bold;
-}
-.button1y {
-    background-color: #dae2ec;
-    font-family: "Roboto";
-    font-size: 18px;
-    width: 33%;
-    border-width: 0;
-    border-radius: 8px;
-    padding:15px;
-    margin:15px;
-}
-.tab-contenty {
-    text-align: center;
-}
-.tabs-containery {
-    background-color: white;
-    border-radius: 8px;
-}
-.sir120{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-     
-}
-img{
-    border-radius:50%;
-    width:20vh;
-    height:30vh;
-}
+        .heading {
+            color: #102a42;
+            font-family: "Roboto";
+            font-weight: bold;
+        }
 
-p{
-    font-size:20px;
-    font-family: "Bree Serif";
-    color: black;
-}
+        .description {
+            font-family: "Roboto";
+        }
+
+        .tabs-container {
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .button {
+            background-color: #dae2ec;
+            font-family: "Roboto";
+            font-size: 18px;
+            width: 33%;
+            border-width: 0;
+            border-radius: 8px;
+        }
+
+        .selected-button {
+            background-color: white;
+        }
+
+        .tab-content {
+            color: #323f4b;
+            font-family: "Roboto";
+            font-size: 15px;
+        }
+
+        .sir {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sir img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
 .social-media {
     display: flex;
     justify-content: center;
