@@ -42,12 +42,11 @@ li{
 }
 
 .conference-details-title {
-    color: #183b56;
-    font-weight: bold;
-    font-size: 25px;
-    font-family: "roboto";
-}
-
+        font-size: 2em;
+        margin-bottom: 15px;
+        color: #333;
+        text-align: center; /* This line centers the title */
+    }
 .conference-details-description {
     color: #5a7184;
     font-family: "roboto";
