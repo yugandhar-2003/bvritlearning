@@ -6,7 +6,9 @@
     border-radius:12px;
     padding: 20px;
 }
-
+li{
+    padding:10px;
+}
 .abc {
     background-size: cover;
     border-radius:12px;
