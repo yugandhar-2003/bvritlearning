@@ -1,4 +1,14 @@
- .bg-container {
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(140, 205, 245);
+}
+.bg-container {
             background: #f1f5f8;
             padding-top: 5rem;
             padding-bottom: 5rem;
