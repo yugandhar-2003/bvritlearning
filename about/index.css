@@ -9,6 +9,10 @@
 li{
     padding:10px;
 }
+.video{
+    height:400vh;
+    width:270vh;
+}
 .abc {
     background-size: cover;
     border-radius:12px;
