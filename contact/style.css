@@ -13,8 +13,7 @@ body,html {
     background: linear-gradient(125deg, rgb(247, 247, 246) 0%,  grey 50%,#0c0312 100%);
     border-radius: 20px;
     height:fit-content;
-    margin-top:30%;
-    margin-bottom:30%;
+    margin-top:25vh;
     display: flex;
     justify-content: center;
 }
