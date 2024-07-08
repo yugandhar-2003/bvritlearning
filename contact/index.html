@@ -2,18 +2,90 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-        
+        .bg-container {
+            background: #f1f5f8;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .heading {
+            color: #102a42;
+            font-family: "Roboto";
+            font-weight: bold;
+        }
+
+        .description {
+            font-family: "Roboto";
+        }
+
+        .tabs-container {
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .button {
+            background-color: #dae2ec;
+            font-family: "Roboto";
+            font-size: 18px;
+            width: 33%;
+            border-width: 0;
+            border-radius: 8px;
+        }
+
+        .selected-button {
+            background-color: white;
+        }
+
+        .tab-content {
+            color: #323f4b;
+            font-family: "Roboto";
+            font-size: 15px;
+        }
+
+        .sir {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sir img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: #323f4b;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 
@@ -30,45 +102,41 @@
                             About
                         </button>
                         <button id="timeToVisitButton" class="p-3 button">
-                            Professional education 
+                            Professional education
                         </button>
                         <button id="attractionsButton" class="p-3 button">
-                            Contact  
+                            Contact
                         </button>
                     </div>
                     <div class="tabs-container">
                         <div id="aboutTab" class="p-3">
                             <div class="tab-content">
-                                <p><span style="color:black;font-size:20px;">Yugandhar</p>
-                                <p><span style="color:black;font-size:20px;">21211Ao5N6
-                                    </p>
-                                <p><span style="color:black;font-size:20px;">CSE [2021-2025]
-                                    </p>
+                                <p><span style="color:black;font-size:20px;">Yugandhar</span></p>
+                                <p><span style="color:black;font-size:20px;">21211Ao5N6</span></p>
+                                <p><span style="color:black;font-size:20px;">CSE [2021-2025]</span></p>
                             </div>
                         </div>
                         <div id="timeToVisitTab" class="p-3">
                             <div class="tab-content">
                                 <p><span style="color:black;font-size:20px;">PADMASRI BV RAJU INSTITUTE OF TECHNOLOGY</span></p>
-                                
                             </div>
                         </div>
                         <div id="attractionsTab" class="p-3">
-                           <div class="social-media">
-                                <a href="https://www.instagram.com/_yugandhar_y_o_g_i_21/" class="instagram" target="_blank" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/yugandhar-p21032003/" class="linkedin" target="_blank" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/yugandhar-2003" class="github" target="_blank" aria-label="GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="mailto:21211A05N6@bvrit.ac.in" class="email" target="_blank" aria-label="Email">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.instagram.com/_yugandhar_y_o_g_i_21/" class="instagram" target="_blank" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
+                            <div class="tab-content">
+                                <div class="social-media">
+                                    <a href="https://www.instagram.com/_yugandhar_y_o_g_i_21/" class="instagram" target="_blank" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/yugandhar-p21032003/" class="linkedin" target="_blank" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/yugandhar-2003" class="github" target="_blank" aria-label="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="mailto:21211A05N6@bvrit.ac.in" class="email" target="_blank" aria-label="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +156,7 @@
         timeToVisitTab.style.display = "none";
         attractionsTab.style.display = "none";
 
-        aboutButton.onclick = function() {
+        aboutButton.onclick = function () {
             aboutButton.classList.add("selected-button");
             timeToVisitButton.classList.remove("selected-button");
             attractionsButton.classList.remove("selected-button");
@@ -97,7 +165,7 @@
             attractionsTab.style.display = "none";
         }
 
-        timeToVisitButton.onclick = function() {
+        timeToVisitButton.onclick = function () {
             aboutButton.classList.remove("selected-button");
             timeToVisitButton.classList.add("selected-button");
             attractionsButton.classList.remove("selected-button");
@@ -106,7 +174,7 @@
             attractionsTab.style.display = "none";
         }
 
-        attractionsButton.onclick = function() {
+        attractionsButton.onclick = function () {
             aboutButton.classList.remove("selected-button");
             timeToVisitButton.classList.remove("selected-button");
             attractionsButton.classList.add("selected-button");
