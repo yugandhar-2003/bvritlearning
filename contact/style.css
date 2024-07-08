@@ -16,6 +16,7 @@ body,html {
     margin:20vh;
     display: flex;
     justify-content: center;
+    width:70%;
 }
 .headingy {
     background: rgb(238, 174, 202);
