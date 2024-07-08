@@ -16,23 +16,25 @@ body .container {
 
 #filter-buttons button {
   border-radius: 6px;
-  background: linear-gradient(120deg, #F0FFF0, #dfb25f, #ef651a);
+  background:white;
+  color:black;
   border-color: transparent;
 }
 
 #filter-buttons button:hover {
-  background: grey;
+  background:white;
+  color:black;
 }
 
 #filter-buttons button.active {
   color: #fff;
-  background: linear-gradient(120deg, #F0FFF0, #27d44d, #086e04);
+  background:grey;
 }
 
 #filterable-cards .card {
   width: 15rem;
   border: 2px solid transparent;
-  background: linear-gradient(120deg, #87CEFA, #AFEEEE, #E6E6FA);
+  background:linear-gradient(120deg, #87CEFA, #AFEEEE, #E6E6FA);
 
 }
 
