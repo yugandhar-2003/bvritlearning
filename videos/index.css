@@ -35,6 +35,19 @@
     margin: 8px;
 }
 
+.buttony1 {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 30%;
+    background: tomato;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 20);
+    margin: 8px;
+    align-Item:center;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
