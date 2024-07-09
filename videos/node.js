@@ -1,10 +1,10 @@
-let aboutButton7 = document.getElementById("aboutButton20");
-let timeToVisitButton7 = document.getElementById("timeToVisitButton20");
-let attractionsButto7 = document.getElementById("attractionsButton20");
+let aboutButton20 = document.getElementById("aboutButton20");
+let timeToVisitButton20 = document.getElementById("timeToVisitButton20");
+let attractionsButto20 = document.getElementById("attractionsButton20");
 
-let aboutTab7 = document.getElementById("aboutTab20");
-let timeToVisitTab7 = document.getElementById("timeToVisitTab20");
-let attractionsTab7 = document.getElementById("attractionsTab20");
+let aboutTab20 = document.getElementById("aboutTab20");
+let timeToVisitTab20 = document.getElementById("timeToVisitTab20");
+let attractionsTab20 = document.getElementById("attractionsTab20");
 
 timeToVisitTab20.style.display = "none";
 attractionsTab20.style.display = "none";
