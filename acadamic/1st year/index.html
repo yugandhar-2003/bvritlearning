@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #294161;
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            transition: all 0.3s ease;
+        }
+        @media (min-width: 640px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background: grey;
+            color: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+             
+        }
+        .card h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+             text-overflow:none;
+           
+        }
+        .card.expanded {
+            grid-column: 1 / -1;
+            transition: all 0.3s ease;
+        }
+        .card.expanded h2,
+        .card.expanded p {
+            display: none;
+        }
+        .exit-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background:orange;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            width:50px;
+        }
+        .exit-button:hover {
+            background: darkred;
+        }
+        .expanded iframe {
+            border-radius: 15px;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>First Year Acadamic Video's</h1>
+        <p>Click on the cards you will get playlist</p>
+        <div class="grid" id="video-grid">
+            <div class="card" data-video-id="videoseries?si=nxJl5h5SNLClecZ-&amp;list=PLfMyF1rjOOM7Bg28I-opmx1ndrVghBlJ9">
+                <h2>Linear Algebra and Calculus</h2>
+               
+            </div>
+            <div class="card" data-video-id="videoseries?si=LVzSvG1C_hjPSGFj&amp;list=PLfMyF1rjOOM6Vg6_a-qLoKEWd2whSe2gY">
+                <h2>Computational thinking and programming</h2>
+               
+            </div>
+            <div class="card" data-video-id="videoseries?si=HpKDOO2TqZPEYqnA&amp;list=PLfMyF1rjOOM6eEbXFb_dOrkHaWVXw78mv">
+                <h2>Engineering chemistry</h2>
+               
+            </div>
+            <div class="card" data-video-id="videoseries?si=oEJR2mgswg93C8NI&amp;list=PLfMyF1rjOOM6uQzoFGBASvrADz9DYxuMq">
+                <h2>Applied Physics</h2>
+                
+            </div>
+            <div class="card" data-video-id="videoseries?si=F58Xt0XrEusPLZyt&amp;list=PLfMyF1rjOOM5nr2puqek7RLIWwPMiXkzk">
+                <h2>Python Programming</h2>
+              
+            </div>
+            <div class="card" data-video-id="videoseries?si=Bavhdj1TXiyfp9nV&amp;list=PLfMyF1rjOOM5sXbpsP6yGyvTjJVV9SbmW">
+                <h2>English</h2>
+                
+            </div>
+            <div class="card" data-video-id="videoseries?si=hBH2nSHOad4hHDh1&amp;list=PLfMyF1rjOOM49bz52TmuaiXiUfFDU_Xf-">
+                <h2>ASNM</h2>
+              
+            </div>
+            <div class="card" data-video-id="videoseries?si=-BEQkqMnNZS9u9bz&amp;list=PLfMyF1rjOOM537a1ADhIJhc1X7knx3PvJ">
+                <h2>Statistics Method</h2>
+              
+            </div>
+           
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const grid = document.getElementById('video-grid');
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    if (!card.classList.contains('expanded')) {
+                        // Collapse any expanded card first
+                        cards.forEach(c => {
+                            c.classList.remove('expanded');
+                            const exitButton = c.querySelector('.exit-button');
+                            if (exitButton) exitButton.remove();
+                            // Remove any existing iframe
+                            const iframe = c.querySelector('iframe');
+                            if (iframe) iframe.remove();
+                        });
+
+                        // Move the clicked card to the top
+                        grid.insertBefore(card, grid.firstChild);
+                        card.classList.add('expanded');
+
+                        // Add YouTube iframe to the clicked card
+                        const videoId = card.getAttribute('data-video-id');
+                        const iframe = document.createElement('iframe');
+                        iframe.width = "560";
+                        iframe.height = "315";
+                        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+                        iframe.frameBorder = "0";
+                        iframe.allow = " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                        iframe.referrerpolicy="strict-origin-when-cross-origin"
+                        iframe.allowFullscreen = true;
+                        iframe.style.borderRadius = "15px";
+                        card.appendChild(iframe);
+
+                        // Add exit button to the clicked card
+                        const exitButton = document.createElement('button');
+                        exitButton.textContent = 'Exit';
+                        exitButton.className = 'exit-button';
+                        card.appendChild(exitButton);
+
+                        exitButton.addEventListener('click', function (e) {
+                            e.stopPropagation();
+                            card.classList.remove('expanded');
+                            iframe.remove();
+                            exitButton.remove();
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

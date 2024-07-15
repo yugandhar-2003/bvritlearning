@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #294161;
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            transition: all 0.3s ease;
+        }
+        @media (min-width: 640px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background: grey;
+            color: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+        }
+        .card a {
+            text-decoration: none; /* Remove underline from anchor tags */
+            color: white; /* Set text color to white */
+        }
+        .card h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .card.expanded {
+            grid-column: 1 / -1;
+            transition: all 0.3s ease;
+        }
+        .card.expanded h2,
+        .card.expanded p {
+            display: none;
+        }
+        .exit-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: orange;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .exit-button:hover {
+            background: darkred;
+        }
+        .expanded iframe {
+            border-radius: 15px;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Academic Videos</h1>
+        
+        <div class="grid" id="video-grid">
+            <div class="card">
+                <a href="..\1st year\index.html"> 
+                    <h2>First Year</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\Cse\index.html"> 
+                    <h2>Computer Science and Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\ECE\index.html"> 
+                    <h2>Electronics and Communications Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\EEE\index.html"> 
+                    <h2>Electrical and Electronics Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\Civil\index.html"> 
+                    <h2>Civil Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\Mech\index.html"> 
+                    <h2>Mechanical Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\Pharmacy\index.html"> 
+                    <h2>Pharmaceutical Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\BioMedical\index.html"> 
+                    <h2>Biomedical Engineering</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="..\chemical\index.html"> 
+                    <h2>Chemical Engineering</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
