@@ -44,8 +44,7 @@
     }
     .tutorial-card {
         height: 100%;
-        text-align:center;/* Ensures all cards have the same height */
+        text-align:center;
+        background:grey;/* Ensures all cards have the same height */
     }
-    .tutorial-card .bg-grey {
-        height: 100%; /* Ensures the inner content area matches the card height */
-    }
+    
