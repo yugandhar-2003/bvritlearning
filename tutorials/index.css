@@ -45,6 +45,6 @@
     .tutorial-card {
         height: 100%;
         text-align:center;
-        background:grey;/* Ensures all cards have the same height */
+       /* Ensures all cards have the same height */
     }
     
