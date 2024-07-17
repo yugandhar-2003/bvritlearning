@@ -1,212 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+   <meta charset="UTF-8">
+   <title>Card de Usuário - @programador.cs</title>
+   <link rel="stylesheet" href="./styles.css">
 
-        .bg-container {
-             background-color:rgb(140, 205, 245);
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            height:100vh;
-        }
-
-        .heading {
-            color: #102a42;
-            font-family: "Roboto";
-            font-weight: bold;
-        }
-
-        .description {
-            font-family: "Roboto";
-        }
-
-        .tabs-container {
-            background-color: white;
-            border-radius: 8px;
-        }
-
-        .button {
-            background-color: #dae2ec;
-            font-family: "Roboto";
-            font-size: 18px;
-            width: 33%;
-            border-width: 0;
-            border-radius: 8px;
-        }
-
-        .selected-button {
-            background-color: white;
-        }
-
-        .tab-content {
-            color: #323f4b;
-            font-family: "Roboto";
-            font-size: 15px;
-            text-align: center;
-        }
-
-        .sir {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .sir img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .social-media {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-        }
-
-        .social-media a {
-            text-decoration: none;
-            color: inherit;
-            margin: 0 10px;
-            font-size: 2em;
-        }
-
-        .social-media a.instagram:hover {
-            color: #e4405f;
-            transform: rotate(360deg);
-        }
-
-        .social-media a.linkedin:hover {
-            color: #0077b5;
-            transform: rotate(360deg);
-        }
-
-        .social-media a.github:hover {
-            color: #333;
-            transform: rotate(360deg);
-        }
-
-        .social-media a.email:hover {
-            color: #D44638;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="bg-container">
-        <div class="container">
-            <div class="sir">
-                <img src="yogi.jpg" alt="Profile Image" />
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-7 mx-auto">
-                    <div class="d-flex flex-row justify-content-between button-container">
-                        <button id="aboutButton" class="p-3 button selected-button">
-                            About
-                        </button>
-                        <button id="timeToVisitButton" class="p-3 button">
-                            Professional education
-                        </button>
-                        <button id="attractionsButton" class="p-3 button">
-                            Contact
-                        </button>
-                    </div>
-                    <div class="tabs-container">
-                        <div id="aboutTab" class="p-3">
-                            <div class="tab-content">
-                                <p><span style="color:black;font-size:20px;">Yugandhar</span></p>
-                                <p><span style="color:black;font-size:20px;">21211A05N6</span></p>
-                                <p><span style="color:black;font-size:20px;">CSE [2021-2025]</span></p>
-                            </div>
-                        </div>
-                        <div id="timeToVisitTab" class="p-3">
-                            <div class="tab-content">
-                                <p><span style="color:black;font-size:20px;">PADMASRI BV RAJU INSTITUTE OF TECHNOLOGY</span></p>
-                            </div>
-                        </div>
-                        <div id="attractionsTab" class="p-3">
-                            <div class="tab-content">
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/_yugandhar_y_o_g_i_21/" class="instagram" target="_blank" aria-label="Instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/yugandhar-p21032003/" class="linkedin" target="_blank" aria-label="LinkedIn">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href="https://github.com/yugandhar-2003" class="github" target="_blank" aria-label="GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="mailto:21211A05N6@bvrit.ac.in" class="email" target="_blank" aria-label="Email">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        let aboutButton = document.getElementById("aboutButton");
-        let timeToVisitButton = document.getElementById("timeToVisitButton");
-        let attractionsButton = document.getElementById("attractionsButton");
-
-        let aboutTab = document.getElementById("aboutTab");
-        let timeToVisitTab = document.getElementById("timeToVisitTab");
-        let attractionsTab = document.getElementById("attractionsTab");
-
-        timeToVisitTab.style.display = "none";
-        attractionsTab.style.display = "none";
-
-        aboutButton.onclick = function () {
-            aboutButton.classList.add("selected-button");
-            timeToVisitButton.classList.remove("selected-button");
-            attractionsButton.classList.remove("selected-button");
-            aboutTab.style.display = "block";
-            timeToVisitTab.style.display = "none";
-            attractionsTab.style.display = "none";
-        }
-
-        timeToVisitButton.onclick = function () {
-            aboutButton.classList.remove("selected-button");
-            timeToVisitButton.classList.add("selected-button");
-            attractionsButton.classList.remove("selected-button");
-            aboutTab.style.display = "none";
-            timeToVisitTab.style.display = "block";
-            attractionsTab.style.display = "none";
-        }
-
-        attractionsButton.onclick = function () {
-            aboutButton.classList.remove("selected-button");
-            timeToVisitButton.classList.remove("selected-button");
-            attractionsButton.classList.add("selected-button");
-            aboutTab.style.display = "none";
-            timeToVisitTab.style.display = "none";
-            attractionsTab.style.display = "block";
-        }
-    </script>
+   <div class="conteudo">
+      <article class="card">
+         <section class="cabecalho"></section>
+         <section class="corpo">
+            <img src="https://media.licdn.com/dms/image/D5603AQF9RNVZtG3xPg/profile-displayphoto-shrink_800_800/0/1675233215497?e=1726704000&v=beta&t=WgG4gv-jYaO3mlnkFH2RLDHo7LeMt6RVNQijLnRWFDM" alt="Imagem programador.cs"
+               class="img__usuario" />
+            <h2 class="nome">Yugandhar</h2>
+            <p class="tipo">21211A05N6</p>
+            <p class="tipo">CSE[2021-2025]</p>
+            <p class="tipo">Padmasri B.V raju institute of technology</p>
+            <section class="redes__sociais">
+               <a href="mailto:21211A05N6@bvrit.ac.in" class="margin:15px">
+                  <img src="https://img.icons8.com/3d-fluency/344/mail.png" alt="Logo mail" />
+                 
+               </a>
+                
+               <a href="https://github.com/yugandhar-2003" class="margin:15px">
+                  <img src="https://img.icons8.com/3d-fluency/344/github.png" alt="Logo Github" />
+                 
+               </a>
+               <a href="https://www.linkedin.com/in/yugandhar-p21032003/" class="margin:15px">
+                  <img src="https://img.icons8.com/3d-fluency/344/linkedin.png" alt="Logo Linkedin" />
+                
+               </a>
+               <a href="https://www.instagram.com/_yugandhar_y_o_g_i_21/" class="margin:15px">
+                  <img src="https://img.icons8.com/3d-fluency/344/instagram-new.png" alt="Logo Instagram" />
+                 
+               </a>
+            </section>
+         </section>
+      </article>
+   </div>
 </body>
 
 </html>
