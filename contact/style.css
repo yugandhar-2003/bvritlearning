@@ -1,97 +1,68 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap);
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background-color: grey;
 }
-.bg-container {
-             background-color:rgb(140, 205, 245);
-
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-
-        .heading {
-            color: #102a42;
-            font-family: "Roboto";
-            font-weight: bold;
-        }
-
-        .description {
-            font-family: "Roboto";
-        }
-
-        .tabs-container {
-            background-color: white;
-            border-radius: 8px;
-        }
-
-        .button {
-            background-color: #dae2ec;
-            font-family: "Roboto";
-            font-size: 18px;
-            width: 33%;
-            border-width: 0;
-            border-radius: 8px;
-        }
-
-        .selected-button {
-            background-color: white;
-        }
-
-        .tab-content {
-            color: #323f4b;
-            font-family: "Roboto";
-            font-size: 15px;
-        }
-
-        .sir {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .sir img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+.conteudo {
+  display: grid;
+  font-family: Open Sans, sans-serif;
+  height: 100vh;
+  place-items: center;
 }
-.social-media a {
-    text-decoration: none;
-    color: inherit;
-    margin: 0 10px;
-    font-size: 2em;
+.conteudo .card {
+  background: #212123;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  width:70%;
 }
- 
-.social-media a.instagram:hover {
-    color: #e4405f; /* Instagram */
-    transform: rotate(360deg);
+.conteudo .card .cabecalho {
+  background: #efefef;
+  height: 100px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-.social-media a.linkedin:hover {
-    color: #0077b5; /* LinkedIn */
-    transform: rotate(360deg);
+.conteudo .card .corpo {
+  color: #959595;
+  display: flex;
+  flex-direction: column;
 }
-.social-media a.github:hover {
-    color: #333; /* GitHub */
-    transform: rotate(360deg);
+.conteudo .card .corpo .img__usuario {
+  align-self: center;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: -63px;
+  max-width: 120px;
 }
-.social-media a.email:hover {
-    color: #D44638; /* Email */
+.conteudo .card .corpo .nome,
+.conteudo .card .corpo .tipo {
+  align-self: center;
+  margin: 0;
+}
+.conteudo .card .corpo .nome {
+  color: #efefef;
+}
+.conteudo .card .corpo .redes__sociais {
+  display:flex;
+  grid-template-rows: repeat(3, 35px);
+  justify-content: center;
+  margin-top: 1rem;
+  
+}
+.conteudo .card .corpo .redes__sociais a {
+  align-items: center;
+  color: #959595;
+  display: flex;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left:10px;
+}
+.conteudo .card .corpo .redes__sociais a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.conteudo .card .corpo .redes__sociais a img {
+  margin-right: 5px;
+  width: 30px;
 }
