@@ -47,16 +47,9 @@ button:hover {
 
 #roadmap {
     margin-top: 20px;
+    background-color:light-green;
 }
 
-.roadmap-item {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 .details {
     display: none;
