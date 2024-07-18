@@ -8,7 +8,9 @@ html {
         justify-content: center;  
         align-items: center; 
 }
-
+body{
+    background:black;
+}
 li {
     list-style: none;
 }
