@@ -359,3 +359,64 @@ nav .logo.space{
   width:70%;
 height:90%;
 }
+
+body {
+  background-color: #212123;
+  margin: 3rem;
+  font-family: "Verdana";
+  display:grid;
+}
+
+.bt1-container {
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size:14px;
+  border-radius: 0.9em;
+  display:flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  margin:10px;
+  width:200px;
+}
+
+.bt1-container .bt1-container--icone {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.bt1-container:hover .bt1-container--icone {
+  width: calc(100% - 0.6em);
+}
+
+.bt1-container .bt1-container--icone svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.bt1-container:hover .bt1-container--icone svg {
+  transform: translateX(0.1em);
+}
+
+.bt1-container:active .bt1-container--icone {
+  transform: scale(0.95);
+}
+
+
