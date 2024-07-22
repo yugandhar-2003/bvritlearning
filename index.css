@@ -9,7 +9,7 @@ html {
         align-items: center; 
 }
 body{
-      background:white;
+      background:rgb(6, 1, 1);
         justify-content: center;  
         align-items: center; 
        
@@ -54,19 +54,9 @@ a {
 .item:hover {
     transform: translateX(-3px);
 }
-
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-     justify-content: center;
-            align-items: center;
-}
-
  
 .hel{
-    margin:5px;
+    margin:15px;
     
 }
 
@@ -111,8 +101,6 @@ a {
     }
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
 nav{
   background: #171c24;
@@ -341,18 +329,24 @@ nav .logo.space{
   margin: 10px 0;
 }
 .buttony {
-  padding: 8px;
+  padding: 5px;
   border-radius: 5px;
   outline: none;
   border: none;
-  background: linear-gradient(120deg, rgb(224, 163, 65) 0%,#cd50e0 50%,#43fd3c 100%);
-  color: #f7f4f4;
+  width: 30%;
+  background: tomato;
+  color: #fff;
   box-shadow: 0 4px 8px rgba(10, 10, 10, 20);
-  margin: 15px;
-  font-size:30px;
-  width:30%;
-  height:30vh;
-        justify-content: center;  
-        align-items: center; 
-}
+  margin: 18px;
 
+}
+        .tutorial-card {
+          height: 100%;
+          text-align:center;
+          padding:20px;
+        
+      }
+      
+.bg1{
+  background: linear-gradient(45deg, #0D99E6 0%, #7ACDC9 100%);
+}
