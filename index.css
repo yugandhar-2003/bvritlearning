@@ -60,10 +60,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    
-    justify-content: center;  
-    align-items: center; 
-    text-align: center;
+     justify-content: center;
+            align-items: center;
 }
 
  
@@ -354,6 +352,7 @@ nav .logo.space{
   font-size:30px;
   width:50vh;
   height:30vh;
-
+        justify-content: center;  
+        align-items: center; 
 }
 
