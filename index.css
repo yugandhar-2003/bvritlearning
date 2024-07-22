@@ -9,7 +9,8 @@ html {
         align-items: center; 
 }
 body{
-      background: #2F2C50;
+      background:white;
+       
 }
 li {
     list-style: none;
@@ -36,7 +37,7 @@ a {
 
    
 
-/
+
 
 /* courosil*/
 .carousel-inner {
@@ -57,7 +58,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    display: flex;
+    
     justify-content: center;  
     align-items: center; 
     text-align: center;
@@ -344,12 +345,13 @@ nav .logo.space{
   border-radius: 5px;
   outline: none;
   border: none;
-  background: linear-gradient(120deg, rgb(235, 154, 4) 0%, #A020F0 50%,#70F020 100%);
-  color: #fff;
+  background: linear-gradient(120deg, rgb(224, 163, 65) 0%,#cd50e0 50%,#43fd3c 100%);
+  color: #f7f4f4;
   box-shadow: 0 4px 8px rgba(10, 10, 10, 20);
-  margin: 8px;
-  font-size:20px;
-  width:70%;
-height:90%;
+  margin: 15px;
+  font-size:30px;
+  width:40vh;
+  height:30vh;
+
 }
 
