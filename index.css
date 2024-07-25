@@ -368,6 +368,7 @@ nav .logo.space{
     height: 2.8em;
     margin-left:25%;
     width:50%;
+    margin:10px;
     text-decoration: none; /* This line removes the underline */
 }
 
