@@ -16,6 +16,17 @@
         function searchTutorials() {
             const input = document.getElementById('searchInput').value.toLowerCase();
             const tutorialCards = document.getElementsByClassName('tutorial-card');
+             const headings = document.getElementsByClassName('heading');
+
+            if (input) {
+                for (let i = 0; i < headings.length; i++) {
+                    headings[i].style.display = 'none';
+                }
+            } else {
+                for (let i = 0; i < headings.length; i++) {
+                    headings[i].style.display = 'block';
+                }
+            }
              
             for (let i = 0; i < tutorialCards.length; i++) {
                 const title = tutorialCards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
