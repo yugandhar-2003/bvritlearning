@@ -47,4 +47,7 @@
         text-align:center;
        /* Ensures all cards have the same height */
     }
-    
+    .heading{
+     color:white;
+     padiing:20px;
+    }
