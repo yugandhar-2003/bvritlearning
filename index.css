@@ -344,7 +344,6 @@ nav .logo.space{
           height: 100%;
           text-align:center;
           padding:20px;
-         display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; 
       }
