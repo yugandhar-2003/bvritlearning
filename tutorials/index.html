@@ -17,15 +17,15 @@
             const input = document.getElementById('searchInput').value.toLowerCase();
             const tutorialCards = document.getElementsByClassName('tutorial-card');
             const heading = document.getElementsByClassName('heading');
-            
+             heading.style.display = 'none';
             for (let i = 0; i < tutorialCards.length; i++) {
                 const title = tutorialCards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
                 if (title.includes(input)) {
                     tutorialCards[i].style.display = 'block';
-                     heading.style.display = 'none';
+                     
                 } else {
                     tutorialCards[i].style.display = 'none';
-                     heading.style.display = 'none';
+                     
                 }
             }
         }
