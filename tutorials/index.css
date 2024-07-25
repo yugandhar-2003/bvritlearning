@@ -38,14 +38,9 @@
         height: 200px; /* Adjust this height as needed */
         object-fit: cover; /* Ensures the image covers the entire container */
     }
-    .containary1 {
-        border: 2px solid #ccc;
+    .containary {
+        text-align: center;
         border-radius: 15px;
-        padding: 20px;
-        margin: 20px;
-        background-color:#808080;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-size:20px;
     }
     .tutorial-card {
         height: 100%;
@@ -53,7 +48,3 @@
        /* Ensures all cards have the same height */
     }
     
-.heading{
-   color:white;
- padding:20px;
-}
