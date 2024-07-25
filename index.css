@@ -57,7 +57,7 @@ a {
  
 .hel{
     margin:15px;
-    
+    padding:20px;
 }
 
 @media (max-width: 768px) {
