@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+      </head>
+      <body>
+        <div class="bg-container pt-5 pb-5">
+            <div class="containery">
+                <div class="col-12  ">
+
+                    <div class="col-12 text-center mb-4">
+                        <h1 class="headingy">MongoDB Tutorial</h1>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <button id="aboutButton3" class="p-3 button1y selected-buttony">
+                            English Tutorial
+                        </button>
+                        <button id="timeToVisitButton3" class="p-3 button1y">
+                            Hindi Tutorial
+                        </button>
+                        <button id="attractionsButton3" class="p-3 button1y">
+                            Telugu Tutioral
+                        </button>
+                    </div>
+                    <div class="tabs-containery">
+                        <div id="aboutTab3" class="p-3">
+                            <div class="tab-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="727" height="409" src="https://www.youtube.com/embed/videoseries?si=_jTPs3pGMpZ0SiLZ&amp;list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA" title="#1 Java Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="timeToVisitTab3" class="p-3">
+                            <div class="tab-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="727" height="409" src="https://www.youtube.com/embed/videoseries?si=t0zoLPIiSD-wCsMn&amp;list=PLA3GkZPtsafZydhN4nP0h7hw7PQuLsBv1" title="Basic Structure of a Java Program: Understanding our First Java Hello World Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="attractionsTab3" class="p-3">
+                            <div class="tab-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="400" height="225" src="https://www.youtube.com/embed/videoseries?si=pMb4brL21l7bzBIw&amp;list=PLd3UqWTnYXOlzZmysFvd13g7W23voyuK9" title="P0 - Java Course Introduction | Java Programming | Core Java |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1DHtXkyeIMERmaOZd273aQbIC7UHV0XTo?usp=sharing"><button class="buttony">get resource</button></a>
+        </div>
+        </div>
+          <header>
+    <h1>MongoDB Tutorial Topics</h1>
+</header>
+<main>
+    <section>
+        <h2>Basics</h2>
+        <h3>Introduction to MongoDB</h3>
+        <ul>
+            <li>What is MongoDB?</li>
+            <li>Installing and setting up MongoDB</li>
+            <li>Connecting to MongoDB server</li>
+        </ul>
+        <h3>Database Fundamentals</h3>
+        <ul>
+            <li>Creating databases and collections</li>
+            <li>Basic MongoDB commands (find, insert, update, delete)</li>
+            <li>Data types in MongoDB</li>
+        </ul>
+        <h3>Basic Queries</h3>
+        <ul>
+            <li>Simple find operations</li>
+            <li>Filtering data with queries</li>
+            <li>Sorting data with sort()</li>
+            <li>Limiting results with limit()</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Intermediate</h2>
+        <h3>Advanced Queries</h3>
+        <ul>
+            <li>Joining documents with $lookup</li>
+            <li>Aggregation framework (pipelines, $match, $group)</li>
+            <li>Subqueries and embedded documents</li>
+            <li>Indexing for performance</li>
+        </ul>
+        <h3>Database Design</h3>
+        <ul>
+            <li>Schema design considerations</li>
+            <li>Normalization vs. denormalization</li>
+            <li>Using references vs. embedding</li>
+            <li>Data modeling patterns</li>
+        </ul>
+        <h3>Stored Procedures and Scripts</h3>
+        <ul>
+            <li>Creating and using JavaScript functions</li>
+            <li>Running map-reduce operations</li>
+            <li>Automating tasks with scripts</li>
+        </ul>
+        <h3>Change Streams and Triggers</h3>
+        <ul>
+            <li>Using change streams to monitor data changes</li>
+            <li>Setting up triggers with MongoDB Atlas</li>
+            <li>Applications of change streams and triggers</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Advanced</h2>
+        <h3>Performance Optimization</h3>
+        <ul>
+            <li>Query optimization techniques</li>
+            <li>Index optimization</li>
+            <li>Understanding and using explain()</li>
+            <li>Database caching strategies</li>
+        </ul>
+        <h3>Security</h3>
+        <ul>
+            <li>User management and roles</li>
+            <li>Securing connections with TLS/SSL</li>
+            <li>Data encryption and decryption</li>
+            <li>Backup and recovery strategies</li>
+        </ul>
+        <h3>Replication and Sharding</h3>
+        <ul>
+            <li>Introduction to replication</li>
+            <li>Setting up replica sets</li>
+            <li>Understanding and using sharding</li>
+            <li>High availability and scaling solutions</li>
+        </ul>
+        <h3>Advanced Topics</h3>
+        <ul>
+            <li>Working with BSON data format</li>
+            <li>Full-text search with MongoDB Atlas Search</li>
+            <li>Geospatial queries and indexing</li>
+            <li>Handling large datasets and big data integration</li>
+        </ul>
+    </section>
+</main>
+
+        <script src="mongo.js"></script>
+  
+      </body></html>
