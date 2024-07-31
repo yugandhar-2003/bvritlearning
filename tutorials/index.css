@@ -27,7 +27,7 @@
         outline: none;
         border: none;
         width: 30%;
-        background: tomato;
+        background: linear-gradient(45deg, #0D99E6 0%, #E613FC 100%); 
         color: #fff;
         box-shadow: 0 4px 8px rgba(10, 10, 10, 20);
         margin: 8px;
