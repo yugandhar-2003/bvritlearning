@@ -117,6 +117,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1000;
+    margin-right:10px;
 }
 nav .logo{
   color: #fff;
