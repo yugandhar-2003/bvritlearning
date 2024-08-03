@@ -9,7 +9,7 @@ html {
         align-items: center; 
 }
 body{
-      background: #f5eeed;
+      background: #f4f4f4;
         justify-content: center;  
         align-items: center; 
        
@@ -410,3 +410,28 @@ nav .logo.space{
 .button-container:active .icon-container {
     transform: scale(0.95);
 }
+
+
+
+
+.containeru {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            margin: 20px 0;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .contact {
+            margin-top: 20px;
+        }
