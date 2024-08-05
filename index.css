@@ -51,7 +51,27 @@ a {
     border-radius: 10px;
 }
 
-   
+   .text-box {
+  width: 87%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-box p {
+  margin: 25px 0 40px;
+  color: #fff3f3;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
 
 
 
