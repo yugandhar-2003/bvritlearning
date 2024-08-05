@@ -19,7 +19,7 @@ body{
 }
 .header {
 
-  min-height:100%; /* Maintains aspect ratio */
+  min-height:100vh; /* Maintains aspect ratio */
  
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 20, 0.7), rgba(4, 9, 30, 0.7)),
