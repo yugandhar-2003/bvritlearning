@@ -19,7 +19,7 @@ body{
       top: 50%;
       transform: translateY(-50%);
       text-align: center;
-      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+      background-color: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
     }
 .header {
   min-height: 100vh;
