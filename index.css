@@ -146,72 +146,7 @@ a {
 }
 
 
-nav{
-  background: #fafbfc;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  padding: 0 100px;
-    width:100%;
-    margin:0;
-}
-nav .logo{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -1px;
-}
-nav .nav-items{
-  display: flex;
-  flex: 1;
-  padding: 0 0 0 40px;
-}
-nav .nav-items li{
-  list-style: none;
-  padding: 0 15px;
-}
-nav .nav-items li a{
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-}
-nav .nav-items li a:hover{
-  color:#fcfafa;
-}
-nav form{
-  display: flex;
-  height: 40px;
-  padding: 2px;
-  background:#f7f8fa;
-  width:100%;
-  border-radius: 2px;
-  border: 1px solid rgba(155,155,155,0.2);
-}
-nav form .search-data{
-  width: 100%;
-  height: 100%;
-  padding: 0 10px;
-  color: #faf7f7;
-  font-size: 17px;
-  border: none;
-  font-weight: 500;
-  background: none;
-}
-nav form button{
-  padding: 0 15px;
-  color: #120303;
-  font-size: 17px;
-  background: #0f0401;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-nav form button:hover{
-  background: #1e0802;
-}
+ 
 nav .menu-icon,
 nav .cancel-icon,
 nav .search-icon{
