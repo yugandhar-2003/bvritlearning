@@ -2,18 +2,18 @@
 const fileHandlingQuizData = [
     {
         "question": "Which function is used to open a file in C?",
-        "choices": ["fopen", "open", "file_open", "open_file"],
-        "correctAnswer": 0
+        "choices": [  "open","fopen", "file_open", "open_file"],
+        "correctAnswer": 1
     },
     {
         "question": "What is the default mode for opening a file using fopen() in C?",
-        "choices": ["r", "w", "a", "rb"],
-        "correctAnswer": 0
+        "choices": [ "w", "a", "rb","r"],
+        "correctAnswer": 3
     },
     {
         "question": "Which function is used to read a character from a file in C?",
-        "choices": ["fgetc", "getc", "read", "fread"],
-        "correctAnswer": 0
+        "choices": [ "getc", "read", "fread","fgetc"],
+        "correctAnswer": 3
     },
     {
         "question": "How do you write a string to a file in C?",
@@ -47,8 +47,8 @@ const fileHandlingQuizData = [
     },
     {
         "question": "How do you check if a file was opened successfully in C?",
-        "choices": ["if (file)", "if (file == NULL)", "if (file != NULL)", "if (!file)"],
-        "correctAnswer": 1
+        "choices": ["if (file)",  "if (file != NULL)", "if (!file)","if (file == NULL)"],
+        "correctAnswer": 3
     },
     {
         "question": "Which function is used to write formatted output to a file in C?",
@@ -67,8 +67,8 @@ const fileHandlingQuizData = [
     },
     {
         "question": "Which function is used to write a character to a file in C?",
-        "choices": ["fputc", "putc", "writec", "fwrite"],
-        "correctAnswer": 0
+        "choices": [  "putc","fputc", "writec", "fwrite"],
+        "correctAnswer": 1
     },
     {
         "question": "How do you move the file pointer to the beginning of a file in C?",
@@ -77,8 +77,8 @@ const fileHandlingQuizData = [
     },
     {
         "question": "Which function is used to flush the output buffer to a file in C?",
-        "choices": ["fflush", "flush", "fwrite", "fclose"],
-        "correctAnswer": 0
+        "choices": ["flush", "fwrite","fflush", "fclose"],
+        "correctAnswer": 2
     },
     {
         "question": "What is the size of the buffer used by default in setbuf() in C?",
@@ -87,13 +87,13 @@ const fileHandlingQuizData = [
     },
     {
         "question": "Which function is used to read binary data from a file in C?",
-        "choices": ["fread", "read", "fgetc", "fscanf"],
-        "correctAnswer": 0
+        "choices": ["read","fread", "fgetc", "fscanf"],
+        "correctAnswer": 1
     },
     {
         "question": "How do you write binary data to a file in C?",
-        "choices": ["fwrite", "write", "fputs", "fprintf"],
-        "correctAnswer": 0
+        "choices": ["write", "fputs", "fprintf","fwrite"],
+        "correctAnswer": 3
     },
     {
         "question": "What is the return value of fwrite() in C?",
@@ -122,23 +122,23 @@ const fileHandlingQuizData = [
     },
     {
         "question": "How do you check for a file error in C?",
-        "choices": ["ferror", "feof", "fcheck", "fstatus"],
-        "correctAnswer": 0
+        "choices": [  "feof","ferror", "fcheck", "fstatus"],
+        "correctAnswer": 1
     },
     {
         "question": "Which function is used to clear the error indicator for a file in C?",
-        "choices": ["clearerr", "fclear", "reseterr", "reset"],
-        "correctAnswer": 0
+        "choices": [  "fclear", "reseterr", "reset","clearerr"],
+        "correctAnswer": 3
     },
     {
         "question": "What is the default mode for fopen() if the mode is not specified?",
-        "choices": ["r", "w", "a", "rb"],
-        "correctAnswer": 0
+        "choices": [  "w","r", "a", "rb"],
+        "correctAnswer": 1
     },
     {
         "question": "Which function is used to set a buffer for a file stream in C?",
-        "choices": ["setbuf", "fsetbuf", "buffer", "fbuf"],
-        "correctAnswer": 0
+        "choices": [  "fsetbuf", "buffer","setbuf", "fbuf"],
+        "correctAnswer": 2
     },
     {
         "question": "How do you determine the length of a file in C?",
@@ -147,8 +147,8 @@ const fileHandlingQuizData = [
     },
     {
         "question": "Which function is used to delete a file in C?",
-        "choices": ["remove", "delete", "unlink", "fdelete"],
-        "correctAnswer": 0
+        "choices": [  "delete","remove", "unlink", "fdelete"],
+        "correctAnswer": 1
     }
 ];
 
