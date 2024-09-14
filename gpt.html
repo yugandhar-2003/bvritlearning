@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduChatbot - Online Learning Assistant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fdf6e3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-center py-5">
+      <h1 class="text-4xl font-bold text-blue-700">EduChatbot</h1>
+      <p class="text-xl">Your Online Learning Assistant</p>
+    </header>
+    <div class="flex justify-center">
+      <div class="px-2 w-full max-w-2xl">
+        <div id="chatbox" class="flex flex-col items-start space-y-2"></div>
+        <div class="flex flex-row my-5">
+          <input
+            class="shadow flex-grow rounded p-2 mr-2 text-black"
+            id="messageInput"
+            type="text"
+            placeholder="Type your question here"
+          />
+          <button
+            class="bg-purple-600 rounded py-2 px-4 text-white font-bold"
+            id="sendButton"
+          >
+            Ask EduChatbot
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const chatbox = document.getElementById('chatbox');
+      const messageInput = document.getElementById('messageInput');
+      const sendButton = document.getElementById('sendButton');
+      const chatId = crypto.randomUUID();
+
+      let receiving = false;
+      const systemPrompt =
+        'You are a knowledgeable chatbot who is here to assist students with their questions and provide clear and accurate explanations.';
+
+      function createMessageElement(text, alignment) {
+        const messageElement = document.createElement('div');
+
+        messageElement.className = `inline-block my-2.5 p-2.5 rounded ${
+          alignment === 'left' ? 'rounded-r' : 'rounded-l'
+        } ${alignment === 'left' ? 'self-start' : 'self-end'} ${alignment === 'left' ? 'bg-blue-700' : 'bg-purple-600'} text-white pt-2.5 pb-1.5 pl-3.5 pr-3.5`;
+        messageElement.textContent = text;
+        return messageElement;
+      }
+
+      function connectWebSocket(message) {
+        receiving = true;
+        const url = 'wss://backend.buildpicoapps.com/api/chatbot/chat';
+        const websocket = new WebSocket(url);
+
+        websocket.addEventListener('open', () => {
+          websocket.send(
+            JSON.stringify({
+              chatId: chatId,
+              appId: 'consider-art',
+              systemPrompt: systemPrompt,
+              message: message,
+            })
+          );
+        });
+
+        const messageElement = createMessageElement('', 'left');
+        chatbox.appendChild(messageElement);
+
+        websocket.onmessage = (event) => {
+          messageElement.innerText += event.data;
+          chatbox.scrollTop = chatbox.scrollHeight;
+        };
+
+        websocket.onclose = (event) => {
+          if (event.code === 1000) {
+            receiving = false;
+          } else {
+            messageElement.textContent += 'Error getting response from server. Refresh the page and try again.';
+            chatbox.scrollTop = chatbox.scrollHeight;
+            receiving = false;
+          }
+        };
+      }
+
+      sendButton.addEventListener('click', () => {
+        if (!receiving && messageInput.value.trim() !== '') {
+          const messageText = messageInput.value.trim();
+          messageInput.value = '';
+          const messageElement = createMessageElement(messageText, 'right');
+          chatbox.appendChild(messageElement);
+          chatbox.scrollTop = chatbox.scrollHeight;
+
+          connectWebSocket(messageText);
+        }
+      });
+
+      messageInput.addEventListener('keydown', (event) => {
+        if (
+          event.key === 'Enter' &&
+          !receiving &&
+          messageInput.value.trim() !== ''
+        ) {
+          event.preventDefault();
+          sendButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>
